@@ -1,0 +1,158 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	position: fixed;
+	top:0; left:0; right:0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 7%;
+	background: #fffcf0;
+}
+
+body{
+	background: url(bg-img.jpg) no-repeat;
+	background-size: cover;
+	height: auto;
+    margin:0 auto;
+    padding: 90px 0;
+    width: 100%;
+}
+
+footer{
+	position: fixed;
+	background-color: #fffcf0;
+	height: 7vh;
+	bottom: 0; 
+	width: 100%;
+	color: black;
+	right: 0; left: 0;
+}
+
+footer h3{
+	position: absolute;
+	left:55%;
+	bottom: 20px;
+}
+
+footer p{
+	position: absolute;
+	left: 6%;
+	bottom: 8px;
+}
+
+.logo {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0; 
+	float: left;
+	width: 120px;
+	height: auto;
+	padding:5px 10px;
+}
+
+.flogo {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0; 
+	float: left;
+	width: 80px;
+	height: auto;
+	padding:5px 10px;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul li a{
+	color: black;
+	text-decoration: none;
+	line-height: 25px;
+	font-size: 18px;
+	padding: 8px 15px;
+	margin-left: 12px;
+}
+
+nav ul li a:hover{
+	color: #f5c92a;
+}
+
+nav ul ul{
+	position: absolute;
+	top: 70px;
+	opacity: 0;
+	visibility: hidden;
+	background-color: #fffcf0;
+}
+
+nav ul li:hover > ul{
+	top:65px; 
+	opacity:1;
+	visibility:visible;
+}
+
+nav ul ul li{
+	position: relative;
+	margin: 0px;
+	width: 155px;
+	float: none;
+	display: list-item;
+	border-bottom: 1px solid #5e8691;
+	list-style-type: none;
+}
+
+nav ul ul li a{
+	line-height:50px;
+}
+
+nav ul ul li a:hover{
+	color: #f5c92a;
+}
+
+
+.ticket{
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.profile{
+	cursor: pointer;
+}
+	
+.text{
+	color: white;
+	font-size: 25px;
+	padding: 10px;
+	margin-left: 20px;
+}
+
+.text h1,h2{
+	text-shadow: 2px 2px #c7a52c;
+}
+
+.Btn{
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 20px 2px;
+	cursor: pointer;
+	background-color: #ded6b8;
+	box-shadow:5px 10px 8px #405e66;
+	border-radius: 2px;
+}
+
+.Btn:hover{
+	color: white;
+	background-color: #c9a938;
+}
+
+

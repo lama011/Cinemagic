@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8" />
+    <title>Cinamagic - Coming Soon</title>
+	<link rel="stylesheet" href="mystyles.css" />
+	<style>
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 5px;
+		}
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
+  </head>
+
+  <body>
+    <header>
+      <a href="Index.php"><img class="logo" src="./imgs/logo.png" alt="logo"/></a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="Index.php">Home</a></li>
+          <li><a href="">Discover ⯆</a>
+			<ul class="dropdown">
+				<li><a href="ShowingNow.php">Showing Now</a></li>
+				<li><a href="ComingSoon.html">Coming Soon</a></li>
+			</ul>
+		  </li>
+          <li><a href="AboutUs.html">About us</a></li>
+        </ul>
+      </nav>
+	  <div>
+		<a class="ticket" href="Ticket.html"><img src="./imgs/ticket.png" width = "30" height = "30" alt="tickets"/></a>
+		<a class="profile" href="LoginPage.html"><img src="./imgs/profile.png" width = "30" height = "30" alt="profile"/></a>
+		</div>
+    </header>
+	
+	<div>
+		<div class="text" style="margin:20px;">
+			<h1>Welcome Admin</h1>
+		</div>
+
+		<center>
+		<div class="row">
+			<div class="column">
+				<a href="Edit.php"><img src="./imgs/Edit.png" alt="Edit" style="width:70%"></a>
+				<figcaption><h2 style="color:white;">Edit movie</h2></figcaption>
+			</div>
+
+			<div class="column">
+				<a href ="Add.php"><img src="./imgs/Add.png" alt="Add" style="width:70%" ></a>
+				<figcaption><h2 style="color:white;">Add movie</h2></figcaption>
+			</div>
+
+			<div class="column">
+				<a href = "Delete.php"><img src="./imgs/Delete.png" alt="Delete" style="width:70%" ></a>
+				<figcaption><h2 style="color:white;">Delete movie</h2></figcaption>
+			</div>
+		</div>
+		</center>
+	</div>
+	
+	
+	<footer>
+		<h3>&copy; 2021 All Rights Reserved. </h3>
+		<a href="Index.php"><img class="flogo" src="./imgs/logo.png" alt="logo"/></a>
+		<p><strong>Cinamagic</strong> </br> A magical experience </p>
+	</footer>
+  </body>
+</html>

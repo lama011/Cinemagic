@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Cinamagic - Payment</title>
+	<link rel="stylesheet" href="mystyles.css" />
+	<style>
+		.form{
+			margin:30px;
+		}
+		
+		.payment-form{
+			width: 600px;
+			height: 400px;
+			background-color: #fffcf0;
+			text-align: center;
+			margin: auto;
+			margin-top: 60px;
+			padding: 10px;
+			box-shadow: 5px 10px 8px #405e66;
+		}
+	</style>
+  </head>
+  <body>
+    <header>
+      <a href="Index.php"><img class="logo" src="./imgs/logo.png" alt="logo"/></a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="Index.php">Home</a></li>
+          <li><a href="">Discover ⯆</a>
+			<ul class="dropdown">
+				<li><a href="ShowingNow.php">Showing Now</a></li>
+				<li><a href="ComingSoon.html">Coming Soon</a></li>
+			</ul>
+		  </li>
+          <li><a href="AboutUs.html">About us</a></li>
+        </ul>
+      </nav>
+	  <div>
+		<a class="ticket" href="Ticket.html"><img src="./imgs/ticket.png" width = "30" height = "30" alt="tickets"/></a>
+		<a class="profile" href="LoginPage.html"><img src="./imgs/profile.png" width = "30" height = "30" alt="profile"/></a>
+		</div>
+    </header>
+	
+	<div class="text" style="margin:20px;">
+		<h1>2. Payment Information</h1>
+	</div>
+	
+	<div class="payment-form">
+	<center>
+		<form method = "post">
+			<div class="form"><label>Payment method</label>
+				<select name = "payment">
+					<option selected>Choose payment method</option>
+					<option>Credit card</option>
+				</select>
+			</div>
+
+			<div class="form"><label for="ccn">Credit Card Number:</label>
+				<input type="text" id="ccn" name="cardnumber" placeholder="1111-2222-3333-4444">
+			</div>
+
+			<div class="form"><label>Cardholder Name</label>
+				<input type="text" id="cname" name="cardname" placeholder="Saleh Mohammed">
+			</div>
+
+			<div class="form"><label>Expiration Date</label>
+				<select name="Month">
+					<option value="january">January</option>
+					<option value="february">February</option>
+					<option value="march">March</option>
+					<option value="april">April</option>
+					<option value="may">May</option>
+					<option value="june">June</option>
+					<option value="july">July</option>
+					<option value="august">August</option>
+					<option value="september">September</option>
+					<option value="october">October</option>
+					<option value="november">November</option>
+					<option value="december">December</option>
+				</select>
+
+				<tr>
+				
+				<select name="Year">
+					<option value="2016">2022</option>
+					<option value="2017">2023</option>
+					<option value="2018">2024</option>
+					<option value="2019">2025</option>
+					<option value="2020">2026</option>
+					<option value="2021">2027</option>
+				</select>
+			</div>
+
+			<div class="form"><label>CVV</label> <input type="text" id="cvv" name="cvv" placeholder="352" style="width:40px;"></div>
+
+			<button class="Btn" type="submit" value="Complete Payment">Complete Payment</button>
+
+	</center>
+	</div>
+	
+	
+	<footer>
+		<h3>&copy; 2021 All Rights Reserved. </h3>
+		<a href="Index.php"><img class="flogo" src="./imgs/logo.png" alt="logo"/></a>
+		<p><strong>Cinamagic</strong> </br> A magical experience </p>
+	</footer>
+
+
+
+
+
+</body>
+</html>

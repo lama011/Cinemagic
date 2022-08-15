@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CInamagic - Booking</title>
+	<link rel="stylesheet" href="mystyles.css" />
+	<style>
+		.seating-plan{
+			background-color: #ededed;
+			width: 520px;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow: 5px 10px 8px #405e66;
+			padding: 10px;
+		}
+		
+		.screen{
+			width: 500px;
+			height: auto;
+		}
+		
+		.DuneBanner{  
+			position: flex;
+			width: 100%;
+			left: 0; right: 0;			
+		}
+	</style>
+  </head>
+  <body>
+    <header>
+	
+      <a href="Index.php"><img class="logo" src="./imgs/logo.png" alt="logo"/></a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="Index.php">Home</a></li>
+          <li><a href="">Discover ⯆</a>
+			<ul class="dropdown">
+				<li><a href="ShowingNow.php">Showing Now</a></li>
+				<li><a href="ComingSoon.html">Coming Soon</a></li>
+			</ul>
+		  </li>
+          <li><a href="AboutUs.html">About us</a></li>
+        </ul>
+      </nav>
+	  <div>
+		<a class="ticket" href="Ticket.html"><img src="./imgs/ticket.png" width = "30" height = "30" alt="tickets"/></a>
+		<a class="profile" href="LoginPage.html"><img src="./imgs/profile.png" width = "30" height = "30" alt="profile"/></a>
+		</div>
+    </header>
+	
+	
+	<!--Booking page code starts here-->
+	
+	<div>
+		<img class="DuneBanner" src="./imgs/Dune.png" alt="Cinama image">
+	</div>
+	
+	<div class="text">
+		<h2>1. Select seats</h2>
+	</div>
+
+	<div class="seating-plan">	
+	<center>
+		<img class="screen" src="./imgs/screen.jpg" alt="screen image">
+
+		<table>
+			<thead> </thead>
+
+			<tbody>
+		
+		<!--FIRST ROW-->
+			
+				<tr>
+					<td class="standard">
+						<label title="E-6">
+							<input type="checkbox" name="seat" id="seat-E-6">
+							E-6
+						</label>
+					</td>
+				
+					<td class="standard">
+						<label title="E-5">
+							<input type="checkbox" name="seat" id="seat-E-5">
+							E-5
+						</label>
+					</td>
+
+					<td class="standard">
+						<label title="E-4">
+							<input type="checkbox" name="seat" id="seat-E-4">
+							E-4
+						</label>
+					</td>
+
+					<td class="seat blank">
+					</td>
+					<td class="seat blank">
+					</td>
+				
+					<td class="standard">
+						<label title="E-3">
+							<input type="checkbox" name="seat" id="seat-E-3">
+							E-3
+						</label>
+					</td>
+					
+					<td class="standard">
+						<label title="E-2">
+							<input type="checkbox" name="seat" id="seat-E-2">
+								E-2
+						</label>
+					</td>
+
+					<td class="standard">
+						<label title="E-1">
+							<input type="checkbox" name="seat" id="seat-E-1">
+							E-1
+						</label>
+					</td>
+				</tr>
+				
+			<!--SECOND ROW-->
+				<tr>
+					<td class="standard">
+						<label title="D-6">
+							<input type="checkbox" name="seat" id="seat-D-6">
+							D-6
+						</label>
+					</td>
+					
+					<td class="standard">
+						<label title="D-5">
+							<input type="checkbox" name="seat" id="seat-D-5">
+								D-5
+						</label>
+					</td>
+
+					<td class="standard">
+						<label title="D-4">
+							<input type="checkbox" name="seat" id="seat-D-4">
+							D-4
+						</label>
+					</td>
+
+					<td class="seat blank">
+					</td>
+					<td class="seat blank">
+					</td>
+					
+					<td class="standard">
+						<label title="D-3">
+							<input type="checkbox" name="seat" id="seat-D-3">
+							D-3
+						</label>
+					</td>
+					
+					<td class="standard">
+						<label title="D-2">
+							<input type="checkbox" name="seat" id="seat-D-2">
+								D-2
+						</label>
+					</td>
+
+					<td class="standard">
+						<label title="D-1">
+							<input type="checkbox" name="seat" id="seat-D-1">
+							D-1
+						</label>
+					</td>
+				</tr>
+				
+			<!--THIRD ROW-->
+				
+				<tr>
+					<td class="standard">
+						<label title="C-6">
+							<input type="checkbox" name="seat" id="seat-C-6">
+							C-6
+						</label>
+					</td>
+					
+					<td class="standard">
+						<label title="C-5">
+							<input type="checkbox" name="seat" id="seat-C-5">
+								C-5
+						</label>
+					</td>
+
+					<td class="standard">
+						<label title="C-4">
+							<input type="checkbox" name="seat" id="seat-C-4">
+							C-4
+						</label>
+					</td>
+
+					<td class="seat blank">
+					</td>
+					<td class="seat blank">
+					</td>
+					
+					<td class="standard">
+						<label title="C-3">
+							<input type="checkbox" name="seat" id="seat-C-3" disabled="">
+							C-3
+						</label>
+					</td>
+					
+					<td class="standard">
+						<label title="C-2">
+							<input type="checkbox" name="seat" id="seat-C-2" disabled="">
+								C-2
+						</label>
+					</td>
+
+					<td class="standard">
+						<label title="C-1">
+							<input type="checkbox" name="seat" id="seat-C-1">
+							C-1
+						</label>
+					</td>
+				</tr>
+				
+			<!--FORTH ROW-->
+				<tr>
+					<td class="vip">
+						<label title="B-6">
+							<input type="checkbox" name="seat" id="seat-B-6">
+							B-6
+						</label>
+					</td>
+					
+					<td class="vip">
+						<label title="B-5">
+							<input type="checkbox" name="seat" id="seat-B-5">
+								B-5
+						</label>
+					</td>
+
+					<td class="vip">
+						<label title="B-4">
+							<input type="checkbox" name="seat" id="seat-B-4">
+							B-4
+						</label>
+					</td>
+
+					<td class="seat blank">
+					</td>
+					<td class="seat blank">
+					</td>
+					
+					<td class="vip">
+						<label title="B-3">
+							<input type="checkbox" name="seat" id="seat-B-3" disabled="">
+							B-3
+						</label>
+					</td>
+					
+					<td class="vip">
+						<label title="B-2">
+							<input type="checkbox" name="seat" id="seat-B-2" disabled="">
+								B-2
+						</label>
+					</td>
+
+					<td class="vip">
+						<label title="B-1">
+							<input type="checkbox" name="seat" id="seat-B-1">
+							B-1
+						</label>
+					</td>
+				</tr>
+				
+			<!--FIFTH ROW-->
+				
+				<tr>
+					<td class="vip">
+						<label title="A-8">
+							<input type="checkbox" name="seat" id="seat-A-8">
+							A-8
+						</label>
+					</td>
+					
+					<td class="vip">
+						<label title="A-7">
+							<input type="checkbox" name="seat" id="seat-A-7" disabled="">
+								A-7
+						</label>
+					</td>
+					
+					<td class="vip">
+						<label title="A-6">
+							<input type="checkbox" name="seat" id="seat-A-6" disabled="">
+							A-6
+						</label>
+					</td>
+					
+					<td class="vip">
+						<label title="A-5">
+							<input type="checkbox" name="seat" id="seat-A-5" disabled="">
+								A-5
+						</label>
+					</td>
+
+					<td class="vip">
+						<label title="A-4">
+							<input type="checkbox" name="seat" id="seat-A-4">
+							A-4
+						</label>
+					</td>
+					
+					<td class="vip">
+						<label title="A-3">
+							<input type="checkbox" name="seat" id="seat-A-3">
+							A-3
+						</label>
+					</td>
+					
+					<td class="vip">
+						<label title="A-2">
+							<input type="checkbox" name="seat" id="seat-A-2">
+								A-2
+						</label>
+					</td>
+
+					<td class="vip">
+						<label title="A-1">
+							<input type="checkbox" name="seat" id="seat-A-1">
+							A-1
+						</label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		</center>
+	</div>
+	
+	<center>
+		<a href="Payment.html"><button class="Btn">Done</button></a>
+	</center>
+	
+	<footer>
+		<h3>&copy; 2021 All Rights Reserved. </h3>
+		<a href="Index.php"><img class="flogo" src="./imgs/logo.png" alt="logo"/></a>
+		<p><strong>Cinamagic</strong> </br> A magical experience </p>
+	</footer>
+  </body>
+</html>
